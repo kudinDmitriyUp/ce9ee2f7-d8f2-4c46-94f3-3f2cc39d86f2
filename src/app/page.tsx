@@ -30,7 +30,6 @@ export default function LandingPage() {
         <NavbarLayoutFloatingOverlay
           brandName="ARBUZ.ai"
           logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731776474-phb13f4r.jpg"
-          logoAlt="Arbuz AI Logo"
           navItems={[
             { name: "Features", id: "features" },
             { name: "Pricing", id: "pricing" },
@@ -267,7 +266,7 @@ export default function LandingPage() {
                   "Dedicated Account Manager"
                 ]
               }
-            ]
+            ]}
             textboxLayout="default"
             animationType="slide-up"
             badgeClassName="text-primary-cta font-semibold"
