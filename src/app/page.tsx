@@ -287,7 +287,7 @@ export default function LandingPage() {
               "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731786210-wanr2nd7.jpg",
               "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731784368-z390lkd9.jpg",
               "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731784979-7kalyqs7.jpg"
-            ]
+            ]}
             textboxLayout="default"
             speed={40}
             showCard={true}
