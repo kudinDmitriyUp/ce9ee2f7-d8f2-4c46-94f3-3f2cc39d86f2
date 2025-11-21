@@ -6,11 +6,9 @@ import HeroBillboardGallery from '@/components/sections/hero/HeroBillboardGaller
 import FeatureCardFive from '@/components/sections/feature/FeatureCardFive';
 import MetricCardOne from '@/components/sections/metrics/MetricCardOne';
 import PricingCardThree from '@/components/sections/pricing/PricingCardThree';
-import TestimonialCardFour from '@/components/sections/testimonial/TestimonialCardFour';
-import FaqDouble from '@/components/sections/faq/FaqDouble';
-import ContactSplitForm from '@/components/sections/contact/ContactSplitForm';
-import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { Zap, Sparkles, Wand2, Coins, Rocket, TrendingUp, Image, Smartphone, CreditCard, Gift, HelpCircle } from "lucide-react";
+import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
+import FooterBase from '@/components/sections/footer/FooterBase';
+import { Zap, Sparkles, Wand2, Coins, Rocket, TrendingUp, Image, Smartphone, CreditCard, Users, Star, Trophy } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -33,8 +31,7 @@ export default function LandingPage() {
           navItems={[
             { name: "Features", id: "features" },
             { name: "Pricing", id: "pricing" },
-            { name: "Referral", id: "referral" },
-            { name: "FAQ", id: "faq" }
+            { name: "Referral", id: "referral" }
           ]}
           button={{
             text: "Try Now",
@@ -278,181 +275,81 @@ export default function LandingPage() {
 
       <div id="referral" data-section="referral" className="bg-card py-20">
         <div className="max-w-7xl mx-auto">
-          <TestimonialCardFour
-            title="Earn Through Referrals"
-            description="Get rewarded for sharing Arbuz with your network. 30% lifetime commission."
-            tag="Referral Program"
-            tagIcon={Gift}
-            testimonials={[
-              {
-                id: "1",
-                name: "Alex Thompson",
-                role: "Traffic Arbitrage Expert",
-                company: "Performance Marketing",
-                rating: 5,
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731784368-z390lkd9.jpg"
-              },
-              {
-                id: "2",
-                name: "Sarah Chen",
-                role: "Digital Marketing Manager",
-                company: "Media Agency",
-                rating: 5,
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731784979-7kalyqs7.jpg"
-              },
-              {
-                id: "3",
-                name: "Mike Rodriguez",
-                role: "Affiliate Manager",
-                company: "Growth Partners",
-                rating: 5,
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731785488-or87x6yy.jpg"
-              },
-              {
-                id: "4",
-                name: "Emma Wilson",
-                role: "Campaign Specialist",
-                company: "Digital Solutions",
-                rating: 5,
-                imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731786210-wanr2nd7.jpg"
-              }
+          <SocialProofOne
+            title="Trusted by Industry Leaders"
+            description="Join thousands of affiliates earning 30% lifetime commission through our referral program"
+            tag="Partner Network"
+            tagIcon={Users}
+            logos={[
+              "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731784368-z390lkd9.jpg",
+              "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731784979-7kalyqs7.jpg",
+              "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731785488-or87x6yy.jpg",
+              "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731786210-wanr2nd7.jpg",
+              "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731784368-z390lkd9.jpg",
+              "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731784979-7kalyqs7.jpg"
             ]}
             textboxLayout="default"
-          />
-        </div>
-      </div>
-
-      <div id="faq" data-section="faq" className="bg-background py-20">
-        <div className="max-w-7xl mx-auto">
-          <FaqDouble
-            title="Frequently Asked Questions"
-            description="Everything you need to know about Arbuz"
-            tag="Help & Support"
-            tagIcon={HelpCircle}
-            faqs={[
+            speed={40}
+            showCard={true}
+            buttons={[
               {
-                id: "1",
-                title: "How do credits work?",
-                content: "Credits are the fuel for Arbuz. Each banner and PWA generation uses a specific number of credits based on complexity. You purchase credit packages and use them as needed. Unused credits roll over to the next month."
+                text: "Join Referral Program",
+                href: "https://app.arbuz.ai/referral",
+                props: {
+                  className: "bg-primary-cta hover:bg-accent text-white"
+                }
               },
               {
-                id: "2",
-                title: "Can I customize templates?",
-                content: "Yes! Arbuz offers both preset templates and custom design options. You can adjust colors, text, images, and layout to match your brand. Premium plans include access to our full template library."
-              },
-              {
-                id: "3",
-                title: "How long does generation take?",
-                content: "Most banners generate in 2-3 minutes, while PWAs take 4-5 minutes. This includes AI processing, optimization, and final rendering. Complex designs may take slightly longer."
-              },
-              {
-                id: "4",
-                title: "Can I export my creatives?",
-                content: "Absolutely! You can export banners as PNG, JPEG, or WebP. PWAs can be exported as deployable packages ready for production. All files are optimized for performance."
-              },
-              {
-                id: "5",
-                title: "What file formats are supported?",
-                content: "We support all major formats: PNG, JPEG, WebP for images, and standard PWA deployment formats. All exports are automatically optimized for web performance."
-              },
-              {
-                id: "6",
-                title: "Is there an API available?",
-                content: "Yes! Enterprise customers have access to our REST API for bulk generation and integration with your systems. Contact our sales team for API documentation and pricing."
+                text: "Learn More",
+                href: "#",
+                props: {
+                  className: "border-2 border-primary-cta text-primary-cta hover:bg-primary-cta hover:text-white"
+                }
               }
             ]}
-            textboxLayout="default"
-            animationType="smooth"
-            faqsContainerClassName="space-y-4"
-            accordionClassName="bg-card border border-accent rounded-lg p-4"
-          />
-        </div>
-      </div>
-
-      <div id="contact" data-section="contact" className="bg-gradient-to-b from-background to-card py-20">
-        <div className="max-w-6xl mx-auto">
-          <ContactSplitForm
-            title="Get in Touch"
-            description="Have questions about Arbuz? Our team is here to help. Reach out and we'll respond within 24 hours."
-            inputs={[
-              {
-                name: "name",
-                type: "text",
-                placeholder: "Your Name",
-                required: true
-              },
-              {
-                name: "email",
-                type: "email",
-                placeholder: "Your Email",
-                required: true
-              },
-              {
-                name: "company",
-                type: "text",
-                placeholder: "Company Name",
-                required: false
-              }
-            ]}
-            textarea={{
-              name: "message",
-              placeholder: "Tell us about your project and how we can help...",
-              rows: 5,
-              required: true
-            }}
-            imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731786869-dwunqqv2.jpg"
-            imageAlt="Contact our team"
-            mediaPosition="right"
-            buttonText="Send Message"
-            titleClassName="text-4xl font-bold text-white mb-4"
-            descriptionClassName="text-gray-300 mb-8"
           />
         </div>
       </div>
 
       <div id="footer" data-section="footer" className="bg-card border-t border-accent">
         <div className="max-w-7xl mx-auto">
-          <FooterLogoEmphasis
+          <FooterBase
             logoText="ARBUZ.ai"
             logoSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_32SiMkwDFagCJqdtr8SgryeO9Cj/uploaded-1763731776474-phb13f4r.jpg"
-            logoAlt="Arbuz AI"
+            copyrightText="© 2025 | ARBUZ.ai - All rights reserved"
             columns={[
               {
+                title: "Product",
                 items: [
-                  { label: "Product", href: "#" },
                   { label: "Features", href: "features" },
                   { label: "Pricing", href: "pricing" },
-                  { label: "API Docs", href: "#" }
+                  { label: "API Docs", href: "#" },
+                  { label: "Templates", href: "#" }
                 ]
               },
               {
+                title: "Company",
                 items: [
-                  { label: "Company", href: "#" },
-                  { label: "About", href: "#" },
+                  { label: "About Us", href: "#" },
                   { label: "Blog", href: "#" },
-                  { label: "Careers", href: "#" }
+                  { label: "Careers", href: "#" },
+                  { label: "Press Kit", href: "#" }
                 ]
               },
               {
+                title: "Support",
                 items: [
-                  { label: "Resources", href: "#" },
                   { label: "Help Center", href: "#" },
-                  { label: "Community", href: "#" },
-                  { label: "Support", href: "#" }
-                ]
-              },
-              {
-                items: [
-                  { label: "Legal", href: "#" },
+                  { label: "Contact", href: "#" },
                   { label: "Privacy Policy", href: "#" },
-                  { label: "Terms of Service", href: "#" },
-                  { label: "Contact", href: "contact" }
+                  { label: "Terms of Service", href: "#" }
                 ]
               }
             ]}
+            onPrivacyClick={() => console.log('Privacy policy clicked')}
             containerClassName="bg-card border-t border-accent"
             columnClassName="space-y-3"
-            itemClassName="text-gray-300 hover:text-primary-cta transition-colors"
+            columnItemClassName="text-gray-300 hover:text-primary-cta transition-colors"
           />
         </div>
       </div>
