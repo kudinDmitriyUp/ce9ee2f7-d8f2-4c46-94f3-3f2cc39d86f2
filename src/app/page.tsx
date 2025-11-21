@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
@@ -128,7 +128,7 @@ export default function LandingPage() {
             animationType="slide-up"
             showIconBoxBackground={true}
             cardClassName="bg-card border border-accent rounded-lg p-6"
-            titleClassName="text-xl font-semibold text-white"
+            cardTitleClassName="text-xl font-semibold text-white"
             iconClassName="w-12 h-12 text-primary-cta"
           />
         </div>

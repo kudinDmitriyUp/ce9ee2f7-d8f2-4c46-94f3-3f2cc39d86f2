@@ -11,7 +11,7 @@ const mulish = Mulish({
 
 export const metadata: Metadata = {
   title: "Arbuz AI - Generate Banners & PWAs in Minutes",
-  description: "Create professional banners and progressive web apps instantly with AI. 3-5 minutes from idea to launch. No design skills needed.",
+  description: "Create professional banners and PWAs instantly with AI. 3-5 minutes from idea to launch. No design skills needed.",
   keywords: "AI banner generator, PWA builder, traffic arbitrage, marketing creatives, performance marketing",
   metadataBase: new URL("https://arbuz.ai"),
   alternates: {
