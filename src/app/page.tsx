@@ -267,7 +267,7 @@ export default function LandingPage() {
                   "Dedicated Account Manager"
                 ]
               }
-            ]}
+            ]
             textboxLayout="default"
             animationType="slide-up"
             badgeClassName="text-primary-cta font-semibold"
@@ -364,7 +364,6 @@ export default function LandingPage() {
             ]}
             textboxLayout="default"
             animationType="smooth"
-            showCard={true}
             faqsContainerClassName="space-y-4"
             accordionClassName="bg-card border border-accent rounded-lg p-4"
           />
